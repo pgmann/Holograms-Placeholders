@@ -1,0 +1,7 @@
+name: ${project.name}
+version: ${project.version}
+description: ${project.description}
+author: SainttX
+
+main: com.sainttx.holograms.placeholders.PlaceholderPlugin
+depend: [ Holograms, ProtocolLib, PlaceholderAPI ]
