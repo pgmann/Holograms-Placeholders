@@ -5,10 +5,9 @@ import com.sainttx.holograms.api.HologramManager;
 import com.sainttx.holograms.api.line.TextualHologramLine;
 import com.sainttx.holograms.api.line.UpdatingHologramLine;
 import org.apache.commons.lang.Validate;
-import org.bukkit.ChatColor;
 import org.bukkit.Location;
 
-public class WrappedUpdatingTextualLine implements UpdatingHologramLine,TextualHologramLine {
+public class WrappedUpdatingTextualLine implements UpdatingHologramLine, TextualHologramLine {
 
     private HologramManager manager;
     private TextualHologramLine line;
