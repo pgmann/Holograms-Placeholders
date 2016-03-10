@@ -16,7 +16,6 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.lang.reflect.InvocationTargetException;
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;
@@ -66,6 +65,7 @@ public class HologramPacketAdapter extends PacketAdapter {
                 if (watchable.getIndex() == 2 && value instanceof String) {
                     String parsed = PlaceholderAPI.setPlaceholders(player, line.getText());
                     watchable.setValue(parsed);
+                    event.setCancelled(true);
                     sendMetadataPacket(player, packet);
                 }
             }
@@ -77,7 +77,7 @@ public class HologramPacketAdapter extends PacketAdapter {
         sendingMetadataPacket.add(player.getUniqueId());
         try {
             ProtocolLibrary.getProtocolManager().sendServerPacket(player, packet.deepClone());
-        } catch (InvocationTargetException ignored) {
+        } catch (Exception ignored) {
         }
         sendingMetadataPacket.remove(player.getUniqueId());
     }
