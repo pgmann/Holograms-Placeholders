@@ -1,5 +1,5 @@
 # Holograms (Placeholders Addon)
-[![Build Status](http://ci.sainttx.com/buildStatus/icon?job=Holograms-Placeholders)](http://ci.sainttx.com/job/HologramsPlaceholders/)
+[![Build Status](http://ci.sainttx.com/buildStatus/icon?job=Holograms-Placeholders)](http://ci.sainttx.com/job/Holograms-Placeholders/)
 
 Per-player placeholders for the Holograms plugin using PlaceholderAPI
 
