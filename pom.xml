@@ -51,6 +51,10 @@
             <id>placeholderapi</id>
             <url>http://repo.extendedclip.com/content/repositories/placeholderapi/</url>
         </repository>
+        <repository>
+            <id>rlf</id>
+            <url>https://raw.githubusercontent.com/rlf/mvn-repo/master</url>
+        </repository>
     </repositories>
 
     <dependencies>
