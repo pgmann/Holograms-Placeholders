@@ -40,7 +40,8 @@ public class HologramPacketAdapter extends PacketAdapter {
     public void onPacketSending(PacketEvent event) {
         PacketContainer packet = event.getPacket();
         Player player = event.getPlayer();
-        Entity entity = packet.getEntityModifier(event).read(0);
+        // Entity entity = packet.getEntityModifier(event).read(0);
+        Entity entity = NMSManager.getEntityFromID(player.getWorld(), packet.getIntegers().read(0));
 
         if (entity == null) {
             return;
